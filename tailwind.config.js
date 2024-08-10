@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero" : "url(/src/images/home-banner.webp)"
+      }
+    },
+  },
+  corePlugins: {
+    container: false,
   },
   plugins: [
     function ({ addComponents }) {
